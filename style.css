@@ -99,16 +99,39 @@ h1:hover,.Homebutton:hover{
   background: rgb(30,60,90);
 }
 
-
-@media screen and (max-width:1300px){
+/*
+@media screen and (max-width:1259px){
     main{
       justify-content: center;
       width: 50%;
       height: 90%;
     }
 }
+*/
 
+@media screen and (max-width:1299px){
+  main.rounded{
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+  }
+}
 
+@media screen and (max-width:640px;){
+  main {  
+    display: grid;
+    gap: 20px;
+    margin: 0 100px 0 100px;
+    justify-content: center;
+    grid-template-columns: 10% 40% 40% 10%; 
+    grid-template-rows: 100px 100px 500px 100px;
+    grid-template-areas: 
+    ". header header ."
+    ". navigation navigation ."
+    "aside section section ads" 
+    "footer footer footer footer"; 
+  }
+}
 
 
 
