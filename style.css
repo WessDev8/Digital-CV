@@ -1,9 +1,10 @@
 body {
   width: 100%;
   height: 100%;
+  padding:20px;
   font-family: Lato, sans-serif;
   background-color: rgb(10, 40, 65);
-  display: inline-flex;
+  display: inline-block;
   flex-wrap: nowrap;
   align-items: center;
   flex-direction: row;
@@ -17,19 +18,26 @@ body {
 .footer {
   background: rgb(0, 20, 45); 
   border-radius: 10px;
+  padding: 20px;
+  border: 10px;
   color: rgb(255,255,255);
   box-shadow: 2px 4px 12px rgb(0,0,0);
 }
 
-/* Grid Area Posiotioning */
+div,span {
+  text-align: center;
+  display: inline-block;
+}
 
+/* Grid Area Positionning */
 .header {
   grid-area: header;
   box-shadow: 2px 2px 8px; 
 }
 
-.navigation {
+.navigation, span {
   grid-area: navigation;
+  display: block;
 }
 
 .aside {
@@ -38,7 +46,6 @@ body {
 
 .section { 
   grid-area: section;
-  font-size: 14px;
 }
 
 .ads {
@@ -49,17 +56,7 @@ body {
   grid-area: footer;
 }
 
-h2,h4 {
-  /*display: ;*/
-  justify-content: center;
-}
-
-h2,h3,h4,article {
-  padding: 10px;
-  width: 100%;
-}
-
-h4:hover  {
+h4:hover {
   transform: scale(1.1);
   text-shadow: 2px 2px 5px rgb(255,255,255);
 }
@@ -67,11 +64,6 @@ h4:hover  {
 h1:hover,.Homebutton:hover{
   text-shadow: 2px 2px 5px rgb(200,200,200);
   background: rgb(30,60,90);
-}
-
-article {
-  /*display: ;*/
-  width: 50%;
 }
 
 .Homebutton {
@@ -89,7 +81,7 @@ article {
   box-shadow: 4px 6px 12px rgb(0,0,0);
 }
 
-/* Responsive design for small phone */
+/*  Responsive design for small phone */ 
 @media screen and (max-width:320px){  
   .header,
   .ads,
@@ -98,8 +90,8 @@ article {
   .section,
   .footer,
   .main {  
-    display:flex;
-    justify-content: center;
+    display:inline-block;
+    justify-content:center;
     border: 10px;
     background-color: blue;
     width:100%;
@@ -117,10 +109,9 @@ article {
   .section,
   .footer,
   .main {  
-    display:flex;
     justify-content: center;
     border: 10px;
-    background-color: green;
+    background-color:green;
     width:100%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -131,19 +122,24 @@ article {
 @media screen and (min-width: 769px){
   main {  
     display: grid;
-    gap: 20px;
-    margin: 0 100px 0 100px;
     justify-content: center;
-    grid-template-columns: 200px 400px 400px 200px; 
-    grid-template-rows: 100px 100px 500px 100px;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: 15% 30% 30% 15%; 
+    grid-template-rows: 20% 70% 20%;
     grid-template-areas: 
-    ". header header ."
-    ". navigation navigation ."
+    "header navigation navigation navigation"
     "aside section section ads" 
     "footer footer footer footer"; 
   }
+
 }
 
+@media screen and (min-width: 1500px){
+    .header{
+      
+    }
+  }
 
 
 
