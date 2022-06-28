@@ -39,7 +39,8 @@ img.logo {
   box-shadow: 2px 2px 8px; 
 }
 
-.navigation, span {
+.navigation {
+  display: flex;
   grid-area: navigation;
   padding: 20px;
 }
