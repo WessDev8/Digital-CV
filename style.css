@@ -28,7 +28,8 @@ img.logo {
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  position: relative;
+  justify-content: center;
+  align-self: center;
 }
 
 /* Grid Area Positionning */
@@ -39,6 +40,7 @@ img.logo {
 }
 
 .navigation {
+  display: flex;
   grid-area: navigation;
 }
 
@@ -57,6 +59,8 @@ img.logo {
 .footer {
   grid-area: footer;
 }
+
+
 
 nav span {
   display: flex;
@@ -133,6 +137,10 @@ nav span {
 
   h2.name {
     display: none;
+  }
+
+  div.header {
+    
   }
 }
 
