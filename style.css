@@ -19,7 +19,7 @@ body {
   background: rgb(0, 20, 45); 
   border-radius: 10px;
   color: rgb(255,255,255);
-  padding: 20px;
+  padding: 30px;
   border: 10px;
   box-shadow: 2px 4px 12px rgb(0,0,0);
 }
@@ -30,6 +30,19 @@ img.logo {
   border-radius: 50px;
   justify-content: center;
   align-self: center;
+}
+
+nav span {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+h4 {
+  justify-content: center;
 }
 
 /* Grid Area Positionning */
@@ -58,16 +71,6 @@ img.logo {
 
 .footer {
   grid-area: footer;
-}
-
-
-
-nav span {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
 }
 
 /*  Responsive design for small phone */ 
@@ -119,12 +122,12 @@ nav span {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    grid-template-columns: 15% 30% 30% 15%; 
+    grid-template-columns: 15% 20% 20% 20% 15%; 
     grid-template-rows: 20% 70% 20%;
     grid-template-areas: 
-    "header navigation navigation navigation"
-    "aside section section ads" 
-    "footer footer footer footer"; 
+    "navigation navigation navigation navigation navigation"
+    "aside section section section ads" 
+    "footer footer footer footer footer"; 
   }
 
 }
@@ -137,10 +140,6 @@ nav span {
 
   h2.name {
     display: none;
-  }
-
-  div.header {
-    
   }
 }
 
