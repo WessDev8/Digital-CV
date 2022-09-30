@@ -19,7 +19,7 @@ body {
   background: rgb(0, 20, 45); 
   border-radius: 10px;
   color: rgb(255,255,255);
-  padding: 30px;
+  padding: 20px;
   border: 10px;
   box-shadow: 2px 4px 12px rgb(0,0,0);
 }
@@ -41,8 +41,8 @@ nav span {
   padding: 5px;
 }
 
-h4 {
-  justify-content: center;
+h3, h4 {
+  text-align: center;
 }
 
 /* Grid Area Positionning */
@@ -120,14 +120,13 @@ h4 {
   main {  
     display: grid;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    grid-template-columns: 15% 20% 20% 20% 15%; 
-    grid-template-rows: 20% 70% 20%;
+    gap: 15px;
+    grid-template-columns: 10% 80% 10%; 
+    grid-template-rows: 10% 80% 10%;
     grid-template-areas: 
-    "navigation navigation navigation navigation navigation"
-    "aside section section section ads" 
-    "footer footer footer footer footer"; 
+    "navigation navigation navigation"
+    "aside section ads" 
+    "footer footer footer"; 
   }
 
 }
@@ -151,7 +150,6 @@ h4 {
   }
 
 h4:hover {
-  text-shadow: 2px 2px 5px rgb(255,255,255);
   @keyframes NavbarAni {
   
     from {
@@ -164,8 +162,7 @@ h4:hover {
       transform: scaleY(1.2);
     }
   }
-}
-*/
+}*/
 
 h1:hover,
 .Homebutton:hover {
