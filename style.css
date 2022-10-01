@@ -1,13 +1,16 @@
 body {
   width: 100%;
   height: 100%;
-  padding:20px;
-  font-family: Lato, sans-serif;
   background-color: rgb(10, 40, 65);
   display: inline-block;
   flex-wrap: nowrap;
   align-items: center;
   flex-direction: row;
+}
+
+main {
+  display: block;
+  padding: 20px;
 }
 
 .header,
@@ -17,7 +20,6 @@ body {
 .ads,
 .footer {
   background: rgb(0, 20, 45); 
-  border-radius: 10px;
   color: rgb(255,255,255);
   padding: 30px;
   border: 10px;
@@ -32,10 +34,17 @@ img.logo {
   align-self: center;
 }
 
+.navigation {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
 nav span {
+  display: inline-block;
   justify-content: center;
   align-items: center;
-  display: flex;
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -46,16 +55,6 @@ h4 {
 }
 
 /* Grid Area Positionning */
-.header {
-  grid-area: header;
-  display: inline-block;
-  box-shadow: 2px 2px 8px; 
-}
-
-.navigation {
-  display: flex;
-  grid-area: navigation;
-}
 
 .aside {
   grid-area: aside;  
@@ -67,10 +66,6 @@ h4 {
 
 .ads {
   grid-area: ads;
-}
-
-.footer {
-  grid-area: footer;
 }
 
 /*  Responsive design for small phone */ 
@@ -122,12 +117,10 @@ h4 {
     justify-content: center;
     gap: 20px;
     padding: 5px;
-    grid-template-columns:0% 10% 60% 10% 0%; 
-    grid-template-rows: 10% 60% 10%;
+    grid-template-columns:0% 10% 40% 10% 0%; 
+    grid-template-rows: 60%;
     grid-template-areas: 
-    "navigation navigation navigation navigation navigation"
-    ". aside section ads ." 
-    "footer footer footer footer footer"; 
+    "aside aside section ads ads" 
   }
 
 }
