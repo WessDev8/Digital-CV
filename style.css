@@ -8,9 +8,14 @@ body {
   flex-direction: row;
 }
 
-main {
-  display: block;
-  padding: 20px;
+.section {
+  background: rgb(0, 20, 45); 
+  color: rgb(255,255,255);
+  width: 70%;
+}
+.ads, 
+.aside {
+  width: 15%;
 }
 
 .header,
@@ -21,8 +26,7 @@ main {
 .footer {
   background: rgb(0, 20, 45); 
   color: rgb(255,255,255);
-  padding: 30px;
-  border: 10px;
+  padding: 15px;
   box-shadow: 2px 4px 12px rgb(0,0,0);
 }
 
@@ -43,8 +47,6 @@ img.logo {
 
 nav span {
   display: inline-block;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -52,20 +54,6 @@ nav span {
 
 h4 {
   justify-content: center;
-}
-
-/* Grid Area Positionning */
-
-.aside {
-  grid-area: aside;  
-}
-
-.section { 
-  grid-area: section;
-}
-
-.ads {
-  grid-area: ads;
 }
 
 /*  Responsive design for small phone */ 
@@ -90,7 +78,6 @@ h4 {
 
 /* Responsive design for medium/large phone */
 @media screen and (max-width:768px) and (min-width:321px){  
-  .header,
   .ads,
   .aside,
   .navigation,
@@ -98,13 +85,11 @@ h4 {
   .footer,
   .main {  
     display:inline-block;
-    justify-content:center;
-    align-items: center;
-    border: 10px;
     background-color:green;
     width:100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 15px;
+    justify-content:center;
+    align-items: center;
     text-decoration: dashed;
   }
 }
@@ -113,10 +98,10 @@ h4 {
 
 @media screen and (min-width: 769px){
   main {  
-    display: grid;
+    display: inline-flex;
     justify-content: center;
     gap: 20px;
-    padding: 5px;
+    padding: 10px;
     grid-template-columns:0% 10% 40% 10% 0%; 
     grid-template-rows: 60%;
     grid-template-areas: 
@@ -143,8 +128,8 @@ h4 {
     animation: 5s NavbarAni;
   }
 
-h4:hover {
-  text-shadow: 2px 2px 5px rgb(255,255,255);
+  h4:hover {
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
   @keyframes NavbarAni {
   
     from {
@@ -159,6 +144,7 @@ h4:hover {
   }
 }
 */
+
 
 h1:hover,
 .Homebutton:hover {
