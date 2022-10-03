@@ -8,17 +8,6 @@ body {
   flex-direction: row;
 }
 
-.section {
-  background: rgb(0, 20, 45); 
-  color: rgb(255,255,255);
-  width: 70%;
-}
-.ads, 
-.aside {
-  width: 15%;
-}
-
-.header,
 .navigation,
 .aside,
 .section,
@@ -27,7 +16,8 @@ body {
   background: rgb(0, 20, 45); 
   color: rgb(255,255,255);
   padding: 15px;
-  box-shadow: 2px 4px 12px rgb(0,0,0);
+  box-shadow: 4px 4px 12px rgb(0,0,0);
+  gap: 20px;
 }
 
 img.logo {
@@ -36,6 +26,28 @@ img.logo {
   border-radius: 50px;
   justify-content: center;
   align-self: center;
+}
+
+/* Individual properties */
+
+.main {
+  width: 75%;
+}
+
+main,
+.footer {
+  margin-top: 15px;
+}
+
+.ads, 
+.aside {
+  width: 15%;
+}
+
+.section {
+  background: rgb(0, 20, 45); 
+  color: rgb(255,255,255);
+  width: 70%;
 }
 
 .navigation {
@@ -56,7 +68,17 @@ h4 {
   justify-content: center;
 }
 
+.footer {
+  height: 200px;
+  width: 100%;
+  bottom: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  align-items: center;
+}
+
 /*  Responsive design for small phone */ 
+
 @media screen and (max-width:320px){  
   .header,
   .ads,
@@ -77,6 +99,7 @@ h4 {
 }
 
 /* Responsive design for medium/large phone */
+
 @media screen and (max-width:768px) and (min-width:321px){  
   .ads,
   .aside,
@@ -157,7 +180,7 @@ h1:hover,
   height: 70px;
   width: 70px;
   right: 20px;
-  bottom: 20px;
+  bottom: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
