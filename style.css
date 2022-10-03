@@ -30,11 +30,7 @@ img.logo {
 
 /* Individual properties */
 
-.main {
-  width: 75%;
-}
-
-main,
+.main,
 .footer {
   margin-top: 15px;
 }
@@ -47,7 +43,8 @@ main,
 .section {
   background: rgb(0, 20, 45); 
   color: rgb(255,255,255);
-  width: 70%;
+  width: 60%;
+  text-align: justify;
 }
 
 .navigation {
@@ -105,15 +102,13 @@ h4 {
   .aside,
   .navigation,
   .section,
-  .footer,
-  .main {  
+  .footer {  
     display:inline-block;
     background-color:green;
-    width:100%;
-    padding: 15px;
-    justify-content:center;
-    align-items: center;
-    text-decoration: dashed;
+    width: 100%;
+    padding: 20px;
+    justify-self:center;
+    text-align: justify;
   }
 }
 
@@ -180,7 +175,7 @@ h1:hover,
   height: 70px;
   width: 70px;
   right: 20px;
-  bottom: 220px;
+  bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
