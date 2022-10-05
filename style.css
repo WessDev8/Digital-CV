@@ -163,6 +163,9 @@ h4 {
 }
 */
 
+.icon-f, .rights{
+  padding: 10px;
+}
 
 h1:hover,
 .Homebutton:hover {
